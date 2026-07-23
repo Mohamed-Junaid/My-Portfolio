@@ -12,7 +12,7 @@ export const siteConfig = {
   phone: '+91 90487 79057',
   whatsapp: '919048779057', // digits only, used in wa.me link
   resumeUrl: '/resume.pdf',
-  url: 'https://mohamedjunaid.dev',
+  url: 'https://junaid3314.vercel.app',
   description:
     'Flutter Developer with 3+ years of experience building high-performance Android and iOS applications. Passionate about clean architecture, scalable mobile solutions, AI-assisted development, and delivering excellent user experiences.',
   socials: {
