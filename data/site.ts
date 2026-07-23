@@ -24,9 +24,7 @@ export const siteConfig = {
   profile: {
     // Drop your photo at public/profile.png (or change this path).
     image: '/profile.png',
-    // Fallback shown when the remote Firestore flag can't be read
-    // (e.g. env vars not set yet). Currently visible by default; the
-    // Firestore `showProfileImage` flag overrides this once wired up.
+    // Show the profile photo across the site (hero, navbar, footer).
     defaultVisible: true,
   },
 } as const
