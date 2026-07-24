@@ -88,7 +88,7 @@ export function Hero() {
         >
           <ButtonLink
             href={siteConfig.resumeUrl}
-            download
+            download={siteConfig.resumeDownloadName}
             variant="primary"
             className="w-full whitespace-nowrap sm:w-auto"
           >
