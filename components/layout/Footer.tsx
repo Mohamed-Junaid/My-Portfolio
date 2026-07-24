@@ -1,7 +1,6 @@
 'use client'
 
 import Image from 'next/image'
-import { Heart } from 'lucide-react'
 import { SocialLinks } from '@/components/ui/SocialLinks'
 import { useProfileImage } from '@/lib/useProfileImage'
 import { navLinks, siteConfig } from '@/data/site'
@@ -52,10 +51,8 @@ export function Footer() {
         </div>
 
         <div className="mt-10 flex flex-col items-center gap-6 border-t border-black/5 pt-8 dark:border-white/5 md:flex-row md:justify-between">
-          <p className="flex items-center gap-1.5 text-sm text-muted">
-            © {year} {siteConfig.name}. Built with
-            <Heart size={14} className="fill-accent text-accent" />
-            using Next.js.
+          <p className="text-sm text-muted">
+            © {year} {siteConfig.name}. All rights reserved.
           </p>
           <SocialLinks />
         </div>
