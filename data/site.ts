@@ -15,7 +15,7 @@ export const siteConfig = {
   resumeDownloadName: 'Mohamed Junaid - Flutter Developer Resume.pdf',
   url: 'https://junaid3314.vercel.app',
   description:
-    'Flutter Developer with 3+ years of experience building high-performance Android and iOS applications. Passionate about clean architecture, scalable mobile solutions, AI-assisted development, and delivering excellent user experiences.',
+    'Flutter Developer with 36+ years of experience building high-performance Android and iOS applications. Passionate about clean architecture, scalable mobile solutions, AI-assisted development, and delivering excellent user experiences.',
   socials: {
     linkedin: 'https://www.linkedin.com/in/mohamedjunaid-5a39362a2',
     instagram: 'https://www.instagram.com/junu__14',
