@@ -9,7 +9,7 @@ export const siteConfig = {
   shortRole: 'Flutter Developer',
   location: 'Kerala, India',
   email: 'junaid3314@gmail.com',
-  phone: '+91 90487 79057',
+  phone: '+91 9048666666',
   whatsapp: '919048779057', // digits only, used in wa.me link
   resumeUrl: '/resume.pdf',
   resumeDownloadName: 'Mohamed Junaid - Flutter Developer Resume.pdf',
