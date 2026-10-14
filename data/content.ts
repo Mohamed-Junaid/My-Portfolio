@@ -173,6 +173,19 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    name: 'MRO Cars',
+    tagline: 'Vehicle services & spare parts',
+    description:
+      'Get offers for spare parts, garage services, tyres, and winch services. Compare quotes, chat with businesses, and track vehicle orders in one app.',
+    image: '/projects/mrocars.png',
+    tech: ['Flutter', 'REST APIs', 'Firebase', 'In-App Chat', 'Order Tracking'],
+    platforms: ['Android', 'iOS'],
+    playStoreUrl:
+      'https://play.google.com/store/apps/details?id=com.ems.mrocars',
+    appStoreUrl: 'https://apps.apple.com/us/app/mro-cars/id6809454998',
+    accent: 'from-emerald-600/20 to-teal-700/20',
+  },
+  {
     name: 'Approach',
     tagline: 'Multi-service marketplace',
     description:
