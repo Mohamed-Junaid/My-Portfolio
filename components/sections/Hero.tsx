@@ -88,7 +88,9 @@ export function Hero() {
         >
           <ButtonLink
             href={siteConfig.resumeUrl}
-            download={siteConfig.resumeDownloadName}
+            download={siteConfig.resumeUrl.startsWith('http') ? undefined : siteConfig.resumeDownloadName}
+            target={siteConfig.resumeUrl.startsWith('http') ? '_blank' : undefined}
+            rel={siteConfig.resumeUrl.startsWith('http') ? 'noopener noreferrer' : undefined}
             variant="primary"
             className="w-full whitespace-nowrap sm:w-auto"
           >
