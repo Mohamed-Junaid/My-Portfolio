@@ -154,10 +154,10 @@ export const translations: Record<Locale, Translations> = {
       availableBadge: 'Available for new opportunities',
       greetingPrefix: 'Hi, I’m',
       name: 'Mohamed Junaid',
-      role: 'Flutter Mobile Application Developer',
+      role: 'Mobile Application Developer (Flutter)',
       location: 'Dubai, UAE',
       description:
-        'Flutter Developer with 3+ years of experience building high-performance Android and iOS applications. Passionate about clean architecture, scalable mobile solutions, AI-assisted development, and delivering excellent user experiences.',
+        'Mobile Application Developer (Flutter) with 3+ years of experience building high-performance Android and iOS applications. Passionate about clean architecture, scalable mobile solutions, AI-assisted development, and delivering excellent user experiences.',
       downloadResume: 'Download Resume',
       contactMe: 'Contact Me',
       viewProjects: 'View Projects',
@@ -375,7 +375,7 @@ export const translations: Record<Locale, Translations> = {
       },
     },
     footer: {
-      tagline: 'Flutter Mobile Application Developer — crafting fast, beautiful mobile experiences.',
+      tagline: 'Mobile Application Developer (Flutter) — crafting fast, beautiful mobile experiences.',
       rights: 'All rights reserved.',
     },
     loader: {
@@ -405,10 +405,10 @@ export const translations: Record<Locale, Translations> = {
       availableBadge: 'متاح لفرص عمل جديدة ومشاريع',
       greetingPrefix: 'مرحباً، أنا',
       name: 'محمد جنيد',
-      role: 'مطور تطبيقات فلاتر للهواتف المحمولة',
+      role: 'مطور تطبيقات هواتف محمولة (فلاتر)',
       location: 'دبي، الإمارات العربية المتحدة',
       description:
-        'مطور تطبيقات فلاتر بخبرة تزيد عن 3 سنوات في بناء تطبيقات أندرويد و iOS عالية الأداء. شغوف بالهندسة المعمارية النظيفة، الحلول البرمجية القابلة للتوسع، التطوير المدعوم بالذكاء الاصطناعي، وتقديم تجارب مستخدم استثنائية.',
+        'مطور تطبيقات هواتف محمولة (فلاتر) بخبرة تزيد عن 3 سنوات في بناء تطبيقات أندرويد و iOS عالية الأداء. شغوف بالهندسة المعمارية النظيفة، الحلول البرمجية القابلة للتوسع، التطوير المدعوم بالذكاء الاصطناعي، وتقديم تجارب مستخدم استثنائية.',
       downloadResume: 'تحميل السيرة الذاتية',
       contactMe: 'تواصل معي',
       viewProjects: 'عرض المشاريع',
@@ -626,7 +626,7 @@ export const translations: Record<Locale, Translations> = {
       },
     },
     footer: {
-      tagline: 'مطور تطبيقات فلاتر للهواتف المحمولة — أصنع تجارب رقمية مميزة وسريعة.',
+      tagline: 'مطور تطبيقات هواتف محمولة (فلاتر) — أصنع تجارب رقمية مميزة وسريعة.',
       rights: 'جميع الحقوق محفوظة.',
     },
     loader: {

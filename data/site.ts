@@ -5,17 +5,17 @@
 
 export const siteConfig = {
   name: 'Mohamed Junaid',
-  role: 'Flutter Mobile Application Developer',
-  shortRole: 'Flutter Developer',
+  role: 'Mobile Application Developer (Flutter)',
+  shortRole: 'Mobile Application Developer (Flutter)',
   location: 'Dubai, UAE',
   email: 'junaid3314@gmail.com',
   phone: '+971 56 295 1800',
   whatsapp: '919048779057', // digits only, used in wa.me link
   resumeUrl: 'https://drive.google.com/file/d/13tsMrFWYv6htvC1rzgg8cOPk5cAZvPmS/view?usp=drive_link',
-  resumeDownloadName: 'Mohamed Junaid - Flutter Developer Resume.pdf',
+  resumeDownloadName: 'Mohamed Junaid - Mobile Application Developer Resume.pdf',
   url: 'https://junaid3314.vercel.app',
   description:
-    'Flutter Developer with 3+ years of experience building high-performance Android and iOS applications. Passionate about clean architecture, scalable mobile solutions, AI-assisted development, and delivering excellent user experiences.',
+    'Mobile Application Developer (Flutter) with 3+ years of experience building high-performance Android and iOS applications. Passionate about clean architecture, scalable mobile solutions, AI-assisted development, and delivering excellent user experiences.',
   socials: {
     linkedin: 'https://www.linkedin.com/in/mohamedjunaid-5a39362a2',
     instagram: 'https://www.instagram.com/junu__14',
