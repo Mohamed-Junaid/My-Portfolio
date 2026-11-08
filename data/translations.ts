@@ -238,7 +238,7 @@ export const translations: Record<Locale, Translations> = {
         {
           company: 'Emstell Technology Consulting',
           role: 'Flutter Developer',
-          period: 'Jan 2024 – Present',
+          period: 'Feb 2024 – Present',
           current: true,
           highlights: [
             'Developed production-ready Android and iOS apps',
@@ -252,7 +252,7 @@ export const translations: Record<Locale, Translations> = {
         {
           company: 'Rootsys International',
           role: 'Flutter Developer Intern',
-          period: 'Oct 2023 – Jan 2024',
+          period: 'Oct 2023 – Feb 2024',
           highlights: [
             'Developed 3 Flutter mobile applications',
             'UI development',
@@ -328,9 +328,11 @@ export const translations: Record<Locale, Translations> = {
         },
         {
           degree: 'PG Diploma in Information Management Systems (PGDIMS)',
+          institution: 'Skymark IT Knowledge Park',
         },
         {
           degree: 'Bachelor of Commerce (B.Com)',
+          institution: 'Bharathiar University',
         },
       ],
     },
@@ -489,7 +491,7 @@ export const translations: Record<Locale, Translations> = {
         {
           company: 'Emstell Technology Consulting',
           role: 'مطور تطبيقات فلاتر',
-          period: 'يناير 2024 – حتى الآن',
+          period: 'فبراير 2024 – حتى الآن',
           current: true,
           highlights: [
             'تطوير تطبيقات أندرويد و iOS متكاملة وجاهزة للإنتاج الفعلي',
@@ -503,7 +505,7 @@ export const translations: Record<Locale, Translations> = {
         {
           company: 'Rootsys International',
           role: 'متدرب مطور فلاتر',
-          period: 'أكتوبر 2023 – يناير 2024',
+          period: 'أكتوبر 2023 – فبراير 2024',
           highlights: [
             'تطوير 3 تطبيقات هواتف محمولة بتقنية فلاتر',
             'بناء وتطوير واجهات المستخدم التفاعلية',
@@ -579,9 +581,11 @@ export const translations: Record<Locale, Translations> = {
         },
         {
           degree: 'دبلوم دراسات عليا في نظم إدارة المعلومات (PGDIMS)',
+          institution: 'Skymark IT Knowledge Park (مجمع سكايمارك لتكنولوجيا المعلومات)',
         },
         {
           degree: 'بكالوريوس التجارة (B.Com)',
+          institution: 'Bharathiar University (جامعة بهاراتيار)',
         },
       ],
     },

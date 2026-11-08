@@ -132,7 +132,7 @@ export const experiences: Experience[] = [
   {
     company: 'Emstell Technology Consulting',
     role: 'Flutter Developer',
-    period: 'Jan 2024 – Present',
+    period: 'Feb 2024 – Present',
     current: true,
     highlights: [
       'Developed production-ready Android and iOS apps',
@@ -146,7 +146,7 @@ export const experiences: Experience[] = [
   {
     company: 'Rootsys International',
     role: 'Flutter Developer Intern',
-    period: 'Oct 2023 – Jan 2024',
+    period: 'Oct 2023 – Feb 2024',
     highlights: [
       'Developed 3 Flutter mobile applications',
       'UI development',
@@ -279,10 +279,11 @@ export const education: EducationItem[] = [
   },
   {
     degree: 'PG Diploma in Information Management Systems (PGDIMS)',
-    institution: 'R',
+    institution: 'Skymark IT Knowledge Park',
   },
   {
     degree: 'Bachelor of Commerce (B.Com)',
+    institution: 'Bharathiar University',
   },
 ]
 
