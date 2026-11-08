@@ -168,11 +168,11 @@ export const translations: Record<Locale, Translations> = {
       title: 'A developer who sweats the details',
       headline: 'Building polished mobile experiences that feel effortless.',
       paragraphs: [
-        'I’m a Flutter developer based in Dubai, UAE, with 3+ years of experience shipping high-performance Android and iOS applications to production.',
+        'I’m a Mobile Application Developer (Flutter) based in Dubai, UAE, with 3+ years of experience shipping high-performance Android and iOS applications to production.',
         'I care deeply about clean, well-structured code, thoughtful UI/UX, and scalable solutions — and I lean heavily into AI-assisted development with tools like Cursor, Claude, GitHub Copilot, Codex, Kiro and Antigravity to move fast without sacrificing quality.',
       ],
       facts: [
-        { label: 'Role', value: 'Flutter Developer' },
+        { label: 'Role', value: 'Mobile Application Developer (Flutter)' },
         { label: 'Location', value: 'Dubai, UAE' },
         { label: 'Experience', value: '3+ Years' },
         { label: 'Currently', value: 'MCA — Manipal University Jaipur' },
@@ -419,11 +419,11 @@ export const translations: Record<Locale, Translations> = {
       title: 'مطور يهتم بأدق التفاصيل والنتائج',
       headline: 'بناء تجارب استثنائية ومتقنة للهواتف تبدو سلسة وبسيطة.',
       paragraphs: [
-        'أنا مطور فلاتر مقيم في دبي، الإمارات العربية المتحدة، ولدي خبرة تتجاوز 3 سنوات في تطوير وإطلاق تطبيقات أندرويد و iOS عالية الأداء على أرض الواقع.',
+        'أنا مطور تطبيقات هواتف محمولة (فلاتر) مقيم في دبي، الإمارات العربية المتحدة، ولدي خبرة تتجاوز 3 سنوات في تطوير وإطلاق تطبيقات أندرويد و iOS عالية الأداء على أرض الواقع.',
         'أولي اهتماماً كبيراً بكتابة كود نظيف ومنظم، وتصميم واجهات وتجارب مستخدم مدروسة، وبناء حلول برمجية قابلة للنمو والتوسع — كما أعتمد بقوة على أدوات التطوير المدعومة بالذكاء الاصطناعي مثل Cursor و Claude و GitHub Copilot و Codex و Kiro و Antigravity للإنجاز السريع بأعلى معايير الجودة.',
       ],
       facts: [
-        { label: 'المسمى الوظيفي', value: 'مطور تطبيقات فلاتر' },
+        { label: 'المسمى الوظيفي', value: 'مطور تطبيقات هواتف محمولة (فلاتر)' },
         { label: 'الموقع', value: 'دبي، الإمارات' },
         { label: 'الخبرة', value: '+3 سنوات' },
         { label: 'حالياً', value: 'ماجستير تطبيقات الحاسوب (MCA) — جامعة مانيبال جايبور' },

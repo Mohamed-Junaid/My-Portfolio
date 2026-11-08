@@ -12,11 +12,11 @@ export type SkillGroup = {
 export const about = {
   headline: 'Building polished mobile experiences that feel effortless.',
   paragraphs: [
-    'I’m a Flutter developer based in Dubai, UAE, with 3+ years of experience shipping high-performance Android and iOS applications to production.',
+    'I’m a Mobile Application Developer (Flutter) based in Dubai, UAE, with 3+ years of experience shipping high-performance Android and iOS applications to production.',
     'I care deeply about clean, well-structured code, thoughtful UI/UX, and scalable solutions — and I lean heavily into AI-assisted development with tools like Cursor, Claude, GitHub Copilot, Codex, Kiro and Antigravity to move fast without sacrificing quality.',
   ],
   facts: [
-    { label: 'Role', value: 'Flutter Developer' },
+    { label: 'Role', value: 'Mobile Application Developer (Flutter)' },
     { label: 'Location', value: 'Dubai, UAE' },
     { label: 'Experience', value: '3+ Years' },
     { label: 'Currently', value: 'MCA — Manipal University Jaipur' },
