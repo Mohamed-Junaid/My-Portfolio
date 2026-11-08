@@ -148,6 +148,7 @@ export const experiences: Experience[] = [
     role: 'Flutter Developer Intern',
     period: 'Oct 2023 – Feb 2024',
     highlights: [
+      'Completed 4-month Mobile App Development course with NETD certification',
       'Developed 3 Flutter mobile applications',
       'UI development',
       'REST API integration',
@@ -278,6 +279,11 @@ export const education: EducationItem[] = [
     current: true,
   },
   {
+    degree: 'Certificate in Flutter Development',
+    institution: 'Rootsys International',
+    note: 'NETD Certified',
+  },
+  {
     degree: 'PG Diploma in Information Management Systems (PGDIMS)',
     institution: 'Skymark IT Knowledge Park',
   },
@@ -288,6 +294,8 @@ export const education: EducationItem[] = [
 ]
 
 export const certifications = [
+  'NETD Certified',
+  'Certificate in Flutter Development',
   'Flutter',
   'Dart',
   'C++',

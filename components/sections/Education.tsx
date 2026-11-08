@@ -4,6 +4,7 @@ import { GraduationCap } from 'lucide-react'
 import { SectionHeading } from '@/components/ui/SectionHeading'
 import { Reveal } from '@/components/ui/Reveal'
 import { useLanguage } from '@/context/LanguageContext'
+import { cn } from '@/lib/utils'
 
 export function Education() {
   const { t } = useLanguage()
@@ -29,8 +30,15 @@ export function Education() {
                 <div className="glass card-hover rounded-2xl p-6">
                   <div className="flex flex-wrap items-center gap-2">
                     <h3 className="font-semibold">{item.degree}</h3>
-                    {item.current && item.note && (
-                      <span className="chip !border-accent/30 !bg-accent/10 !text-accent">
+                    {item.note && (
+                      <span
+                        className={cn(
+                          'chip',
+                          item.current
+                            ? '!border-accent/30 !bg-accent/10 !text-accent'
+                            : '!border-emerald-500/30 !bg-emerald-500/10 !text-emerald-400'
+                        )}
+                      >
                         {item.note}
                       </span>
                     )}

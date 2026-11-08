@@ -254,6 +254,7 @@ export const translations: Record<Locale, Translations> = {
           role: 'Flutter Developer Intern',
           period: 'Oct 2023 – Feb 2024',
           highlights: [
+            'Completed 4-month Mobile App Development course with NETD certification',
             'Developed 3 Flutter mobile applications',
             'UI development',
             'REST API integration',
@@ -325,6 +326,11 @@ export const translations: Record<Locale, Translations> = {
           institution: 'Manipal University Jaipur',
           note: 'Currently Pursuing',
           current: true,
+        },
+        {
+          degree: 'Certificate in Flutter Development',
+          institution: 'Rootsys International',
+          note: 'NETD Certified',
         },
         {
           degree: 'PG Diploma in Information Management Systems (PGDIMS)',
@@ -507,6 +513,7 @@ export const translations: Record<Locale, Translations> = {
           role: 'متدرب مطور فلاتر',
           period: 'أكتوبر 2023 – فبراير 2024',
           highlights: [
+            'إتمام دورة مكثفة لمدة 4 أشهر في تطوير تطبيقات فلاتر مع شهادة NETD المعتمدة',
             'تطوير 3 تطبيقات هواتف محمولة بتقنية فلاتر',
             'بناء وتطوير واجهات المستخدم التفاعلية',
             'ربط وتكامل واجهات REST APIs',
@@ -578,6 +585,11 @@ export const translations: Record<Locale, Translations> = {
           institution: 'جامعة مانيبال جايبور',
           note: 'قيد الدراسة حالياً',
           current: true,
+        },
+        {
+          degree: 'شهادة في تطوير تطبيقات فلاتر (Certificate in Flutter Development)',
+          institution: 'Rootsys International (روتسيز الدولية)',
+          note: 'شهادة معتمدة من NETD',
         },
         {
           degree: 'دبلوم دراسات عليا في نظم إدارة المعلومات (PGDIMS)',
