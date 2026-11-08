@@ -204,6 +204,7 @@ export const translations: Record<Locale, Translations> = {
         'Other': 'Other',
       },
       itemTranslations: {
+        'C++': 'C++\u200E',
         'Layered Structure': 'Layered Structure',
         'Feature-based Organization': 'Feature-based Organization',
         'Separation of Concerns': 'Separation of Concerns',
@@ -463,6 +464,7 @@ export const translations: Record<Locale, Translations> = {
         'Other': 'مهارات إضافية',
       },
       itemTranslations: {
+        'C++': 'C++\u200E',
         'Layered Structure': 'هيكل متعدد الطبقات',
         'Feature-based Organization': 'تنظيم حسب الميزات',
         'Separation of Concerns': 'فصل المسؤوليات البرمجية',

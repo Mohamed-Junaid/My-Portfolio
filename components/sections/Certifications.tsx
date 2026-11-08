@@ -18,7 +18,11 @@ function Row({ items, reverse = false }: { items: string[]; reverse?: boolean })
             className="glass card-hover flex shrink-0 items-center gap-2 rounded-2xl px-6 py-4"
           >
             <span className="h-2 w-2 rounded-full bg-accent" />
-            <span className="whitespace-nowrap font-medium">{item}</span>
+            <span className="whitespace-nowrap font-medium">
+              <bdi dir={item.includes('+') || item.includes('#') ? 'ltr' : undefined}>
+                {item.includes('+') || item.includes('#') ? `\u200E${item}\u200E` : item}
+              </bdi>
+            </span>
           </div>
         ))}
       </div>

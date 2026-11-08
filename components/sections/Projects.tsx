@@ -60,11 +60,17 @@ function ProjectCard({
         <p className="mt-3 text-sm leading-relaxed text-muted">{localized.description}</p>
 
         <div className="mt-4 flex flex-wrap gap-1.5">
-          {project.tech.map((tech) => (
-            <span key={tech} className="chip">
-              {t.skills.itemTranslations[tech] ?? tech}
-            </span>
-          ))}
+          {project.tech.map((tech) => {
+            const text = t.skills.itemTranslations[tech] ?? tech
+            const isCodeToken = text.includes('+') || text.includes('#')
+            return (
+              <span key={tech} className="chip">
+                <bdi dir={isCodeToken ? 'ltr' : undefined}>
+                  {isCodeToken ? `\u200E${text}\u200E` : text}
+                </bdi>
+              </span>
+            )
+          })}
         </div>
 
         <div className="mt-6 pt-2">

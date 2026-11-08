@@ -63,11 +63,17 @@ export function Skills() {
                   <h3 className="font-semibold">{categoryName}</h3>
                 </div>
                 <div className="flex flex-wrap gap-2">
-                  {group.items.map((item) => (
-                    <span key={item} className="chip">
-                      {t.skills.itemTranslations[item] ?? item}
-                    </span>
-                  ))}
+                  {group.items.map((item) => {
+                    const text = t.skills.itemTranslations[item] ?? item
+                    const isCodeToken = text.includes('+') || text.includes('#')
+                    return (
+                      <span key={item} className="chip">
+                        <bdi dir={isCodeToken ? 'ltr' : undefined}>
+                          {isCodeToken ? `\u200E${text}\u200E` : text}
+                        </bdi>
+                      </span>
+                    )
+                  })}
                 </div>
               </div>
             </Reveal>
