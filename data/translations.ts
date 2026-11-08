@@ -157,7 +157,7 @@ export const translations: Record<Locale, Translations> = {
       role: 'Mobile Application Developer (Flutter)',
       location: 'Dubai, UAE',
       description:
-        'Mobile Application Developer (Flutter) with 3+ years of experience building high-performance Android and iOS applications. Passionate about clean architecture, scalable mobile solutions, AI-assisted development, and delivering excellent user experiences.',
+        'Specializing in high-performance Android and iOS applications with 3+ years of production experience. Passionate about clean architecture, scalable mobile solutions, AI-assisted development, and delivering seamless user experiences.',
       downloadResume: 'Download Resume',
       contactMe: 'Contact Me',
       viewProjects: 'View Projects',
@@ -168,11 +168,11 @@ export const translations: Record<Locale, Translations> = {
       title: 'A developer who sweats the details',
       headline: 'Building polished mobile experiences that feel effortless.',
       paragraphs: [
-        'I’m a Mobile Application Developer (Flutter) based in Dubai, UAE, with 3+ years of experience shipping high-performance Android and iOS applications to production.',
+        'Based in Dubai, UAE, I engineer smooth, production-grade mobile applications with 3+ years of hands-on experience shipping across iOS and Android using Flutter.',
         'I care deeply about clean, well-structured code, thoughtful UI/UX, and scalable solutions — and I lean heavily into AI-assisted development with tools like Cursor, Claude, GitHub Copilot, Codex, Kiro and Antigravity to move fast without sacrificing quality.',
       ],
       facts: [
-        { label: 'Role', value: 'Mobile Application Developer (Flutter)' },
+        { label: 'Role', value: 'Mobile App Developer' },
         { label: 'Location', value: 'Dubai, UAE' },
         { label: 'Experience', value: '3+ Years' },
         { label: 'Currently', value: 'MCA — Manipal University Jaipur' },
@@ -375,7 +375,7 @@ export const translations: Record<Locale, Translations> = {
       },
     },
     footer: {
-      tagline: 'Mobile Application Developer (Flutter) — crafting fast, beautiful mobile experiences.',
+      tagline: 'Crafting polished, high-performance mobile experiences across Android & iOS.',
       rights: 'All rights reserved.',
     },
     loader: {
@@ -408,7 +408,7 @@ export const translations: Record<Locale, Translations> = {
       role: 'مطور تطبيقات هواتف محمولة (فلاتر)',
       location: 'دبي، الإمارات العربية المتحدة',
       description:
-        'مطور تطبيقات هواتف محمولة (فلاتر) بخبرة تزيد عن 3 سنوات في بناء تطبيقات أندرويد و iOS عالية الأداء. شغوف بالهندسة المعمارية النظيفة، الحلول البرمجية القابلة للتوسع، التطوير المدعوم بالذكاء الاصطناعي، وتقديم تجارب مستخدم استثنائية.',
+        'متخصص في بناء وتطوير تطبيقات أندرويد و iOS عالية الأداء بخبرة إنتاجية تتجاوز 3 سنوات. شغوف بالهندسة المعمارية النظيفة، الحلول البرمجية القابلة للتوسع، والتطوير المدعوم بالذكاء الاصطناعي.',
       downloadResume: 'تحميل السيرة الذاتية',
       contactMe: 'تواصل معي',
       viewProjects: 'عرض المشاريع',
@@ -419,11 +419,11 @@ export const translations: Record<Locale, Translations> = {
       title: 'مطور يهتم بأدق التفاصيل والنتائج',
       headline: 'بناء تجارب استثنائية ومتقنة للهواتف تبدو سلسة وبسيطة.',
       paragraphs: [
-        'أنا مطور تطبيقات هواتف محمولة (فلاتر) مقيم في دبي، الإمارات العربية المتحدة، ولدي خبرة تتجاوز 3 سنوات في تطوير وإطلاق تطبيقات أندرويد و iOS عالية الأداء على أرض الواقع.',
+        'مقيم في دبي، أعمل على هندسة وبناء تطبيقات هواتف ذكية متكاملة وعالية الأداء بخبرة تزيد عن 3 سنوات في إطلاق المنتجات لمنصتي iOS وأندرويد باستخدام فلاتر.',
         'أولي اهتماماً كبيراً بكتابة كود نظيف ومنظم، وتصميم واجهات وتجارب مستخدم مدروسة، وبناء حلول برمجية قابلة للنمو والتوسع — كما أعتمد بقوة على أدوات التطوير المدعومة بالذكاء الاصطناعي مثل Cursor و Claude و GitHub Copilot و Codex و Kiro و Antigravity للإنجاز السريع بأعلى معايير الجودة.',
       ],
       facts: [
-        { label: 'المسمى الوظيفي', value: 'مطور تطبيقات هواتف محمولة (فلاتر)' },
+        { label: 'المسمى الوظيفي', value: 'مطور تطبيقات محمولة' },
         { label: 'الموقع', value: 'دبي، الإمارات' },
         { label: 'الخبرة', value: '+3 سنوات' },
         { label: 'حالياً', value: 'ماجستير تطبيقات الحاسوب (MCA) — جامعة مانيبال جايبور' },
@@ -626,7 +626,7 @@ export const translations: Record<Locale, Translations> = {
       },
     },
     footer: {
-      tagline: 'مطور تطبيقات هواتف محمولة (فلاتر) — أصنع تجارب رقمية مميزة وسريعة.',
+      tagline: 'أصنع تجارب رقمية متقنة وسريعة للهواتف المحمولة عبر منصتي Android و iOS.',
       rights: 'جميع الحقوق محفوظة.',
     },
     loader: {
