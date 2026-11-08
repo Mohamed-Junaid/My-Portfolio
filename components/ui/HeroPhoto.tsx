@@ -24,10 +24,10 @@ export function HeroPhoto() {
   return (
     <div
       aria-hidden
-      className="pointer-events-none absolute right-[3%] top-1/2 z-0 hidden h-[80%] w-[42%] max-w-[560px] -translate-y-1/2 md:block"
+      className="pointer-events-none absolute right-[3%] rtl:right-auto rtl:left-[3%] top-1/2 z-0 hidden h-[80%] w-[42%] max-w-[560px] -translate-y-1/2 md:block"
     >
       {/* soft violet glow behind the figure */}
-      <div className="absolute bottom-[6%] right-[2%] h-[60%] w-[68%] rounded-full bg-[#6d28d9]/20 blur-[130px]" />
+      <div className="absolute bottom-[6%] right-[2%] rtl:right-auto rtl:left-[2%] h-[60%] w-[68%] rounded-full bg-[#6d28d9]/20 blur-[130px]" />
 
       <Image
         src={siteConfig.profile.image}

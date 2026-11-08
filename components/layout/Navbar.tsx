@@ -4,8 +4,10 @@ import { useEffect, useState } from 'react'
 import Image from 'next/image'
 import { motion, AnimatePresence, useScroll, useMotionValueEvent } from 'framer-motion'
 import { Menu, X } from 'lucide-react'
-import { navLinks, siteConfig } from '@/data/site'
+import { siteConfig } from '@/data/site'
 import { useProfileImage } from '@/lib/useProfileImage'
+import { useLanguage } from '@/context/LanguageContext'
+import { LanguageToggle } from '@/components/ui/LanguageToggle'
 import { cn } from '@/lib/utils'
 
 export function Navbar() {
@@ -13,6 +15,16 @@ export function Navbar() {
   const [open, setOpen] = useState(false)
   const showAvatar = useProfileImage()
   const { scrollY } = useScroll()
+  const { t, isArabic } = useLanguage()
+
+  const links = [
+    { label: t.nav.about, href: '#about' },
+    { label: t.nav.skills, href: '#skills' },
+    { label: t.nav.experience, href: '#experience' },
+    { label: t.nav.projects, href: '#projects' },
+    { label: t.nav.education, href: '#education' },
+    { label: t.nav.contact, href: '#contact' },
+  ]
 
   useMotionValueEvent(scrollY, 'change', (y) => setScrolled(y > 24))
 
@@ -33,7 +45,7 @@ export function Navbar() {
     >
       <nav
         className={cn(
-          'flex w-full max-w-content items-center justify-between rounded-2xl px-4 py-2.5 transition-all duration-300 sm:px-6',
+          'flex w-full max-w-content items-center justify-between rounded-2xl px-3.5 py-2.5 transition-all duration-300 sm:px-6',
           scrolled ? 'glass-strong shadow-lg shadow-black/5' : 'bg-transparent'
         )}
       >
@@ -53,11 +65,11 @@ export function Navbar() {
               />
             </span>
           )}
-          <span className="whitespace-nowrap">{siteConfig.name}</span>
+          <span className="whitespace-nowrap">{isArabic ? t.hero.name : siteConfig.name}</span>
         </a>
 
         <ul className="hidden items-center gap-1 md:flex">
-          {navLinks.map((link) => (
+          {links.map((link) => (
             <li key={link.href}>
               <a
                 href={link.href}
@@ -70,11 +82,12 @@ export function Navbar() {
         </ul>
 
         <div className="flex items-center gap-2">
+          <LanguageToggle />
           <a
             href="#contact"
             className="hidden whitespace-nowrap rounded-full bg-accent px-5 py-2 text-sm font-semibold text-white shadow-lg shadow-accent/25 transition-all hover:brightness-110 md:inline-flex"
           >
-            Let’s talk
+            {t.nav.letsTalk}
           </a>
           <button
             type="button"
@@ -99,7 +112,7 @@ export function Navbar() {
             className="glass-strong absolute inset-x-4 top-20 rounded-2xl p-4 shadow-xl md:hidden"
           >
             <ul className="flex flex-col">
-              {navLinks.map((link) => (
+              {links.map((link) => (
                 <li key={link.href}>
                   <a
                     href={link.href}
@@ -110,13 +123,19 @@ export function Navbar() {
                   </a>
                 </li>
               ))}
-              <li className="mt-2">
+              <li className="mt-3 flex flex-col gap-3 border-t border-black/5 pt-3 dark:border-white/5">
+                <div className="flex items-center justify-between px-2">
+                  <span className="text-xs uppercase tracking-wider text-muted font-medium">
+                    {isArabic ? 'اللغة' : 'Language'}
+                  </span>
+                  <LanguageToggle />
+                </div>
                 <a
                   href="#contact"
                   onClick={() => setOpen(false)}
-                  className="block rounded-xl bg-accent px-4 py-3 text-center text-base font-semibold text-white"
+                  className="block rounded-xl bg-accent px-4 py-3 text-center text-base font-semibold text-white shadow-lg shadow-accent/25"
                 >
-                  Let’s talk
+                  {t.nav.letsTalk}
                 </a>
               </li>
             </ul>

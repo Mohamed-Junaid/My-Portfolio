@@ -1,5 +1,6 @@
 'use client'
 
+import { useLanguage } from '@/context/LanguageContext'
 import { cn } from '@/lib/utils'
 
 /** Google Play brand glyph (inline SVG — Lucide has no brand marks). */
@@ -31,10 +32,12 @@ type Props = {
 function StoreLink({
   href,
   label,
+  disabledTitle,
   children,
 }: {
   href?: string
   label: string
+  disabledTitle?: string
   children: React.ReactNode
 }) {
   const enabled = Boolean(href)
@@ -45,7 +48,7 @@ function StoreLink({
     return (
       <span
         aria-disabled="true"
-        title="Coming soon"
+        title={disabledTitle ?? 'Coming soon'}
         className={cn(
           base,
           'cursor-not-allowed border border-black/5 bg-black/5 text-muted opacity-50 dark:border-white/5 dark:bg-white/5'
@@ -73,20 +76,31 @@ function StoreLink({
 }
 
 export function StoreButtons({ playStoreUrl, appStoreUrl }: Props) {
+  const { t } = useLanguage()
+  const sb = t.projects.storeButtons
+
   return (
     <div className="flex gap-2">
-      <StoreLink href={playStoreUrl} label="Get it on Google Play">
+      <StoreLink
+        href={playStoreUrl}
+        label={`${sb.getItOn} ${sb.googlePlay}`}
+        disabledTitle={sb.comingSoon}
+      >
         <GooglePlayIcon />
         <span className="flex flex-col items-start leading-none">
-          <span className="text-[9px] font-normal text-muted">GET IT ON</span>
-          <span>Google Play</span>
+          <span className="text-[9px] font-normal text-muted">{sb.getItOn}</span>
+          <span>{sb.googlePlay}</span>
         </span>
       </StoreLink>
-      <StoreLink href={appStoreUrl} label="Download on the App Store">
+      <StoreLink
+        href={appStoreUrl}
+        label={`${sb.downloadOn} ${sb.appStore}`}
+        disabledTitle={sb.comingSoon}
+      >
         <AppleIcon />
         <span className="flex flex-col items-start leading-none">
-          <span className="text-[9px] font-normal text-muted">Download on</span>
-          <span>App Store</span>
+          <span className="text-[9px] font-normal text-muted">{sb.downloadOn}</span>
+          <span>{sb.appStore}</span>
         </span>
       </StoreLink>
     </div>

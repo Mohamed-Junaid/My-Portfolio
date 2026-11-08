@@ -6,6 +6,7 @@ import { ButtonLink } from '@/components/ui/Button'
 import { SocialLinks } from '@/components/ui/SocialLinks'
 import { HeroPhoto } from '@/components/ui/HeroPhoto'
 import { siteConfig } from '@/data/site'
+import { useLanguage } from '@/context/LanguageContext'
 
 const container: Variants = {
   hidden: {},
@@ -22,6 +23,8 @@ const item: Variants = {
 }
 
 export function Hero() {
+  const { t, isArabic } = useLanguage()
+
   return (
     <section
       id="home"
@@ -29,18 +32,18 @@ export function Hero() {
     >
       {/* floating decorative shapes */}
       <div aria-hidden className="pointer-events-none absolute inset-0">
-        <span className="absolute left-[10%] top-[22%] h-3 w-3 animate-float rounded-full bg-accent/50 [animation-delay:-2s]" />
-        <span className="absolute bottom-[24%] left-[18%] h-2.5 w-2.5 animate-float rounded-full bg-emerald-400/50" />
+        <span className="absolute left-[10%] rtl:left-auto rtl:right-[10%] top-[22%] h-3 w-3 animate-float rounded-full bg-accent/50 [animation-delay:-2s]" />
+        <span className="absolute bottom-[24%] left-[18%] rtl:left-auto rtl:right-[18%] h-2.5 w-2.5 animate-float rounded-full bg-emerald-400/50" />
       </div>
 
-      {/* Portrait bleeding in from the right (remote-toggle controlled) */}
+      {/* Portrait bleeding in from the right / left in RTL (remote-toggle controlled) */}
       <HeroPhoto />
 
       <motion.div
         variants={container}
         initial="hidden"
         animate="visible"
-        className="section relative z-10 flex flex-col items-center text-center md:items-start md:pr-[36%] md:text-left"
+        className="section relative z-10 flex flex-col items-center text-center md:items-start md:pe-[36%] md:ps-0 md:text-start"
       >
         <motion.span
           variants={item}
@@ -50,7 +53,7 @@ export function Hero() {
             <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75" />
             <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-500" />
           </span>
-          Available for new opportunities
+          {t.hero.availableBadge}
         </motion.span>
 
         <motion.p
@@ -58,28 +61,28 @@ export function Hero() {
           className="mb-3 flex items-center gap-2 text-sm font-medium text-muted"
         >
           <MapPin size={15} className="text-accent" />
-          {siteConfig.location}
+          {t.hero.location}
         </motion.p>
 
         <motion.h1
           variants={item}
           className="whitespace-nowrap text-[clamp(1.9rem,4.4vw,3.5rem)] font-bold leading-[1.08] tracking-tight"
         >
-          Hi, I’m <span className="gradient-text">{siteConfig.name}</span>
+          {t.hero.greetingPrefix} <span className="gradient-text">{t.hero.name}</span>
         </motion.h1>
 
         <motion.p
           variants={item}
           className="mt-4 text-xl font-medium text-muted sm:text-2xl"
         >
-          {siteConfig.role}
+          {t.hero.role}
         </motion.p>
 
         <motion.p
           variants={item}
           className="mt-6 max-w-2xl text-pretty text-base leading-relaxed text-muted sm:text-lg"
         >
-          {siteConfig.description}
+          {t.hero.description}
         </motion.p>
 
         <motion.div
@@ -95,15 +98,15 @@ export function Hero() {
             className="w-full whitespace-nowrap sm:w-auto"
           >
             <Download size={18} />
-            Download Resume
+            {t.hero.downloadResume}
           </ButtonLink>
           <ButtonLink href="#contact" variant="secondary" className="w-full whitespace-nowrap sm:w-auto">
             <Mail size={18} />
-            Contact Me
+            {t.hero.contactMe}
           </ButtonLink>
           <ButtonLink href="#projects" variant="secondary" className="w-full whitespace-nowrap sm:w-auto">
             <FolderGit2 size={18} />
-            View Projects
+            {t.hero.viewProjects}
           </ButtonLink>
         </motion.div>
 
@@ -115,7 +118,7 @@ export function Hero() {
       {/* scroll cue */}
       <motion.a
         href="#about"
-        aria-label="Scroll to about section"
+        aria-label={t.hero.scrollAria}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.2 }}

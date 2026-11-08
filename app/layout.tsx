@@ -1,12 +1,19 @@
 import type { Metadata, Viewport } from 'next'
-import { Inter } from 'next/font/google'
+import { Inter, Cairo } from 'next/font/google'
 import './globals.css'
 import { ThemeProvider } from '@/components/theme/ThemeProvider'
+import { LanguageProvider } from '@/context/LanguageContext'
 import { siteConfig } from '@/data/site'
 
 const inter = Inter({
   subsets: ['latin'],
   variable: '--font-sans',
+  display: 'swap',
+})
+
+const cairo = Cairo({
+  subsets: ['arabic', 'latin'],
+  variable: '--font-arabic',
   display: 'swap',
 })
 
@@ -21,6 +28,10 @@ export const metadata: Metadata = {
     'Flutter Developer',
     'Mobile App Developer',
     'Dart',
+    'C++',
+    'JavaScript',
+    'HTML',
+    'CSS',
     'Android Developer',
     'iOS Developer',
     'Firebase',
@@ -86,7 +97,18 @@ const jsonLd = {
     addressCountry: 'AE',
   },
   sameAs: [siteConfig.socials.linkedin, siteConfig.socials.instagram],
-  knowsAbout: ['Flutter', 'Dart', 'Firebase', 'Mobile Development', 'iOS', 'Android'],
+  knowsAbout: [
+    'Flutter',
+    'Dart',
+    'C++',
+    'JavaScript',
+    'HTML',
+    'CSS',
+    'Firebase',
+    'Mobile Development',
+    'iOS',
+    'Android',
+  ],
 }
 
 export default function RootLayout({
@@ -97,16 +119,26 @@ export default function RootLayout({
   return (
     <html
       lang="en"
+      dir="ltr"
       suppressHydrationWarning
-      className={`${inter.variable} dark`}
+      className={`${inter.variable} ${cairo.variable} dark`}
       style={{ colorScheme: 'dark' }}
     >
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){try{var l=localStorage.getItem('cv_locale');if(l==='ar'){document.documentElement.lang='ar';document.documentElement.dir='rtl';document.documentElement.classList.add('rtl');}}catch(e){}})()`,
+          }}
+        />
+      </head>
       <body className="min-h-screen font-sans antialiased">
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
-        <ThemeProvider>{children}</ThemeProvider>
+        <ThemeProvider>
+          <LanguageProvider>{children}</LanguageProvider>
+        </ThemeProvider>
       </body>
     </html>
   )

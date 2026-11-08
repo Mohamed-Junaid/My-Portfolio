@@ -19,6 +19,7 @@ import {
 import { SectionHeading } from '@/components/ui/SectionHeading'
 import { Reveal } from '@/components/ui/Reveal'
 import { skills } from '@/data/content'
+import { useLanguage } from '@/context/LanguageContext'
 
 const iconMap: Record<string, LucideIcon> = {
   Code2,
@@ -37,17 +38,21 @@ const iconMap: Record<string, LucideIcon> = {
 }
 
 export function Skills() {
+  const { t } = useLanguage()
+
   return (
     <section id="skills" className="section scroll-mt-24 py-24">
       <SectionHeading
-        eyebrow="Skills"
-        title="Tools I build with every day"
-        description="A focused toolkit for shipping fast, reliable, and beautiful mobile apps."
+        eyebrow={t.skills.eyebrow}
+        title={t.skills.title}
+        description={t.skills.description}
       />
 
       <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
         {skills.map((group, i) => {
           const Icon = iconMap[group.icon] ?? Sparkles
+          const categoryName = t.skills.categories[group.category] ?? group.category
+
           return (
             <Reveal key={group.category} delay={i % 4} as="article">
               <div className="glass card-hover group h-full rounded-3xl p-6">
@@ -55,12 +60,12 @@ export function Skills() {
                   <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-gradient-to-br from-accent/20 to-accent/5 text-accent transition-transform duration-300 group-hover:scale-110">
                     <Icon size={20} />
                   </div>
-                  <h3 className="font-semibold">{group.category}</h3>
+                  <h3 className="font-semibold">{categoryName}</h3>
                 </div>
                 <div className="flex flex-wrap gap-2">
                   {group.items.map((item) => (
                     <span key={item} className="chip">
-                      {item}
+                      {t.skills.itemTranslations[item] ?? item}
                     </span>
                   ))}
                 </div>

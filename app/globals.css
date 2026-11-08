@@ -40,6 +40,13 @@
     overflow-x: hidden;
   }
 
+  html[dir='rtl'],
+  html[lang='ar'],
+  html[dir='rtl'] body,
+  html.rtl body {
+    font-family: var(--font-arabic), system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+
   ::selection {
     background-color: rgb(10 132 255 / 0.25);
   }

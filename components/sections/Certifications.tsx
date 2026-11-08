@@ -2,13 +2,14 @@
 
 import { SectionHeading } from '@/components/ui/SectionHeading'
 import { certifications } from '@/data/content'
+import { useLanguage } from '@/context/LanguageContext'
 
 function Row({ items, reverse = false }: { items: string[]; reverse?: boolean }) {
   const doubled = [...items, ...items]
   return (
     <div className="mask-fade-x flex overflow-hidden">
       <div
-        className="flex shrink-0 items-center gap-4 pr-4 animate-marquee"
+        className="flex shrink-0 items-center gap-4 pe-4 animate-marquee"
         style={reverse ? { animationDirection: 'reverse' } : undefined}
       >
         {doubled.map((item, i) => (
@@ -26,6 +27,7 @@ function Row({ items, reverse = false }: { items: string[]; reverse?: boolean })
 }
 
 export function Certifications() {
+  const { t } = useLanguage()
   const mid = Math.ceil(certifications.length / 2)
   const first = certifications.slice(0, mid)
   const second = certifications.slice(mid)
@@ -34,9 +36,9 @@ export function Certifications() {
     <section id="certifications" className="scroll-mt-24 py-24">
       <div className="section">
         <SectionHeading
-          eyebrow="Certifications & Technologies"
-          title="The stack behind the work"
-          description="Technologies and tools I work with to ship great mobile products."
+          eyebrow={t.certifications.eyebrow}
+          title={t.certifications.title}
+          description={t.certifications.description}
         />
       </div>
 

@@ -2,16 +2,18 @@
 
 import { useEffect, useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
+import { useLanguage } from '@/context/LanguageContext'
 
 export function Loader() {
   const [done, setDone] = useState(false)
+  const { t } = useLanguage()
 
   useEffect(() => {
-    const t = setTimeout(() => setDone(true), 1100)
+    const timer = setTimeout(() => setDone(true), 1100)
     // Fail-safe: never trap the user behind the loader.
     const fallback = setTimeout(() => setDone(true), 3000)
     return () => {
-      clearTimeout(t)
+      clearTimeout(timer)
       clearTimeout(fallback)
     }
   }, [])
@@ -39,9 +41,9 @@ export function Loader() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.2 }}
-              className="text-xs uppercase tracking-[0.3em] text-muted"
+              className="text-xs uppercase tracking-[0.3em] text-muted font-medium"
             >
-              Loading
+              {t.loader.loading}
             </motion.div>
           </div>
         </motion.div>

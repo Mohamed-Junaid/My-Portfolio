@@ -31,7 +31,7 @@ export const stats = [
 ]
 
 export const skills: SkillGroup[] = [
-  { category: 'Languages', icon: 'Code2', items: ['Dart'] },
+  { category: 'Languages', icon: 'Code2', items: ['Dart', 'C++', 'JavaScript', 'HTML', 'CSS'] },
   {
     category: 'Frameworks & UI',
     icon: 'Layers',
@@ -287,6 +287,11 @@ export const education: EducationItem[] = [
 
 export const certifications = [
   'Flutter',
+  'Dart',
+  'C++',
+  'JavaScript',
+  'HTML',
+  'CSS',
   'Firebase',
   'Git',
   'GitHub',

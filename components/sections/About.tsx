@@ -10,22 +10,19 @@ import {
 import { SectionHeading } from '@/components/ui/SectionHeading'
 import { Reveal } from '@/components/ui/Reveal'
 import { Counter } from '@/components/ui/Counter'
-import { about, stats } from '@/data/content'
+import { useLanguage } from '@/context/LanguageContext'
 
-const factIcons: Record<string, LucideIcon> = {
-  Role: UserRound,
-  Location: MapPin,
-  Experience: Briefcase,
-  Currently: GraduationCap,
-}
+const factIconList: LucideIcon[] = [UserRound, MapPin, Briefcase, GraduationCap]
 
 export function About() {
+  const { t } = useLanguage()
+
   return (
     <section id="about" className="section scroll-mt-24 py-24">
       <SectionHeading
-        eyebrow="About Me"
-        title="A developer who sweats the details"
-        description={about.headline}
+        eyebrow={t.about.eyebrow}
+        title={t.about.title}
+        description={t.about.headline}
       />
 
       <div className="grid gap-6 lg:grid-cols-5">
@@ -33,15 +30,15 @@ export function About() {
         <Reveal className="lg:col-span-3">
           <div className="glass card-hover h-full rounded-3xl p-8 sm:p-10">
             <div className="space-y-5">
-              {about.paragraphs.map((p) => (
-                <p key={p} className="text-pretty text-base leading-relaxed text-muted sm:text-lg">
+              {t.about.paragraphs.map((p, idx) => (
+                <p key={idx} className="text-pretty text-base leading-relaxed text-muted sm:text-lg">
                   {p}
                 </p>
               ))}
             </div>
 
             <div className="mt-8 grid grid-cols-2 gap-4 border-t border-black/5 pt-8 dark:border-white/5 sm:grid-cols-4">
-              {stats.map((s) => (
+              {t.about.stats.map((s) => (
                 <div key={s.label}>
                   <div className="text-3xl font-bold gradient-text sm:text-4xl">
                     <Counter value={s.value} suffix={s.suffix} />
@@ -56,11 +53,11 @@ export function About() {
         {/* Facts */}
         <Reveal delay={1} className="lg:col-span-2">
           <div className="grid h-full gap-4">
-            {about.facts.map((fact) => {
-              const Icon = factIcons[fact.label] ?? UserRound
+            {t.about.facts.map((fact, idx) => {
+              const Icon = factIconList[idx] ?? UserRound
               return (
                 <div
-                  key={fact.label}
+                  key={idx}
                   className="glass card-hover flex items-center gap-4 rounded-2xl p-5"
                 >
                   <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-accent/10 text-accent">

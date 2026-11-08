@@ -20,7 +20,7 @@ export function SectionHeading({
       className={
         align === 'center'
           ? 'mx-auto mb-14 max-w-2xl text-center'
-          : 'mb-14 max-w-2xl'
+          : 'mb-14 max-w-2xl text-start'
       }
     >
       <Reveal>
