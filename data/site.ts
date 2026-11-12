@@ -8,19 +8,19 @@ export const siteConfig = {
   role: 'Mobile Application Developer (Flutter)',
   shortRole: 'Mobile Developer',
   location: 'Dubai, UAE',
-  email: 'junaid3314@gmail.com',
+  email: 'junaidkarimbil14@gmail.com',
   phone: '+971 56 295 1800',
-  whatsapp: '919048779057', // digits only, used in wa.me link
+  whatsapp: '+971 56 295 1800', // digits only, used in wa.me link
   resumeUrl: 'https://drive.google.com/file/d/1TAmw_3DRHo49aClKYkp9Rhn78pXyIZv7/view?usp=sharing',
   resumeDownloadName: 'Mohamed Junaid - Mobile Application Developer Resume.pdf',
-  url: 'https://junaid3314.vercel.app',
+  url: 'https://junaidkarimbil.in',
   description:
     'Specializing in high-performance Android and iOS applications with 3+ years of production experience. Passionate about clean architecture, scalable mobile solutions, AI-assisted development, and delivering seamless user experiences.',
   socials: {
     linkedin: 'https://www.linkedin.com/in/mohamedjunaid-5a39362a2',
     instagram: 'https://www.instagram.com/junu__14',
-    email: 'mailto:junaid3314@gmail.com',
-    whatsapp: 'https://wa.me/919048779057',
+    email: 'mailto:junaidkarimbil14@gmail.com',
+    whatsapp: 'https://wa.me/971562951800',
   },
   profile: {
     // Drop your photo at public/profile.png (or change this path).
